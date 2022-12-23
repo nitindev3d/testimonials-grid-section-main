@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root
+{
+    --clr-primary : hsl(210, 46%, 95%);
+    --clr-secondary-700 : hsl(263, 55%, 52%);
+    --clr-secondary-900 : hsl(219, 29%, 14%);
+    --clr-secondary-100 : hsl(0, 0%, 100%);
+    --clr-secondary-300 : hsl(0, 0%, 81%);
+    --clr-secondary-500 : hsl(217, 19%, 35%);
+
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    background-color: var(--clr-primary);
+    font-size: 13px;
+    display: grid;
+    place-content: center;
+}
+
+.one {
+    
+    background-color: var(--clr-secondary-700);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position:  top right 20%;
+    color: var(--clr-secondary-100);
+}
+.two {
+    background-color: var(--clr-secondary-500);
+    color: var(--clr-secondary-100);
+}
+
+.three {
+    background-color: var(--clr-secondary-100);
+}
+
+.four {
+    background-color: var(--clr-secondary-900);
+    color: var(--clr-secondary-100);
+}
+
+.five {
+    background-color: var(--clr-secondary-100);
+}
+
+.testimonial {
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.profile-img {
+    width: 2.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0;
+
+}
+.profile-img img {
+    border-radius: inherit;
+}
+
+.profile-img,
+.profile-id {
+    display: inline-block;
+}
+
+.profile-id {
+    margin-left: 10px;
+}
+
+.name,
+.qualification {
+    font-size: 0.9rem;
+}
+
+.qualification {
+    font-weight: 100;
+    opacity: 50%;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.detailed-description {
+    font-weight: 600;
+    opacity: 50%;
+}
+
+
+/* Grid display properties begins */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+
+.one {
+    grid-column: span 2;
+}
+
+.four {
+    grid-column: span 2;
+}
+
+.five {
+    grid-column-start: 4;
+    grid-row: 1/span 2;
+}
+
+/* Shadow for boxes */
+.shadow {
+    box-shadow: 10px 10px 30px var(--clr-secondary-300);
+}
+
+
